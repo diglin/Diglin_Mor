@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<Diglin_Mor>
+						<title>Mor Module</title>
+						<sort_order>10</sort_order>
+					</Diglin_Mor>
+					<system>
+						<children>
+							<config>
+								<children>
+									<mor translate="title" module="mor">
+										<title>MOR Configuration</title>
+									</mor>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<layout>
+		<updates>
+			<mor>
+				<file>mor.xml</file>
+			</mor>
+		</updates>
+	</layout>
+</config>

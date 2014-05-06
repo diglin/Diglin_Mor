@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<Diglin_Mor translate="label" module="mor">
+			<label>MOR</label>
+			<sort_order>10</sort_order>
+		</Diglin_Mor>
+	</tabs>
+	<sections>
+		<mor translate="label" module="mor">
+			<class>separator-top</class>
+			<label>MOR Configuration</label>
+			<tab>Diglin_Mor</tab>
+			<sort_order>130</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<configuration translate="label">
+					<label>General</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<ip_address translate="label">
+							<label>IP Address</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Provide the IP Address of your MOR installation e.g. 192.168.1.1]]></comment>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</ip_address>
+						<secure>
+							<label>SSL</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Do you want to use secure connection (SSL)]]></comment>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</secure>
+						<api_secret_key>
+							<label>API Secret Key</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[API secret key that you defined in MOR backend. Check in MOR backend as admin to Setup > Settings > API tabs]]></comment>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</api_secret_key>
+					</fields>
+				</configuration>
+				<customer>
+					<label>Customer</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<register_allowed>
+							<label>Allow user registration</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Do you want to allow to register user account in MOR.]]></comment>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</register_allowed>
+						<loginlogout_allowed>
+							<label>Allow user login/logout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Do you want to allow to user to login/logout in MOR.]]></comment>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</loginlogout_allowed>
+					</fields>
+				</customer>				
+				<sales>
+					<label>Sales</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>30</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<chargerefund_allowed>
+							<label>Allow Sales Charge and Refund</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Do you want to allow to charge or refund the user account in MOR after a sale.]]></comment>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</chargerefund_allowed>
+						<order_status_activation translate="label">
+                            <label>Order Item Status to charge the user MOR accout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>downloadable/system_config_source_orderitemstatus</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_activation>
+					</fields>
+				</sales>
+			</groups>
+		</mor>
+	</sections>
+</config>

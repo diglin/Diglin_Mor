@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="mor"><name>mor_historycalls</name><path>mor/customer/history</path><label><![CDATA[My Calls History & Balance]]></label></action>
+        </reference>
+    </customer_account>
+    
+    <mor_customer_history translate="label">
+        <label>My calls history and balance</label>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="mor/customer_history" name="mor_customer_history" template="mor/customer/history.phtml" />
+        </reference>
+        <reference name="root">
+            <action method="setHeaderTitle" translate="title" module="downloadable"><title>My Calls History &amp; Balance</title></action>
+        </reference>
+    </mor_customer_history>
+</layout> 
