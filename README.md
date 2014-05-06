@@ -1,4 +1,4 @@
-*** Diglin Mor ***
+### Diglin Mor ###
 
 Magento Extension for the VoIP Billing Software MOR.
 Purpose is to display credit/history of a MOR user into Magento.
